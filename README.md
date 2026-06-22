@@ -8,6 +8,7 @@
 
 <br/>
 
+<a href="https://github.com/iamirtasam/zeloh/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/iamirtasam/zeloh/ci.yml?branch=main&style=for-the-badge&label=build" alt="CI" /></a>
 <img src="https://img.shields.io/badge/license-MIT-F5C518?style=for-the-badge" alt="MIT License" />
 <img src="https://img.shields.io/badge/status-production%20ready-2ea44f?style=for-the-badge" alt="Status" />
 <img src="https://img.shields.io/badge/built%20with-AI%20%C2%B7%20vibecoded-7c3aed?style=for-the-badge" alt="Vibecoded" />

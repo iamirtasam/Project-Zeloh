@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+  ZELOH — GitHub Social Preview Banner (1280 x 640)
+  ─────────────────────────────────────────────────
+  How to export it as an image:
+    1. Open this file in Chrome/Edge.
+    2. Press F12 → click the "Toggle device toolbar" icon (Ctrl+Shift+M).
+    3. Set a custom/responsive size of 1280 x 640.
+    4. Open the "..." menu in the device toolbar → "Capture screenshot".
+    5. Upload the PNG at: GitHub repo → Settings → Social preview → Edit.
+  (Or use any "html to image" tool / browser screenshot extension.)
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1280px; height: 640px; overflow: hidden; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background:
+      radial-gradient(1100px 700px at 78% -10%, rgba(245,197,24,0.16), transparent 60%),
+      radial-gradient(900px 600px at 0% 110%, rgba(245,197,24,0.08), transparent 55%),
+      #0b0d12;
+    color: #fff;
+    position: relative;
+  }
+  /* subtle grid */
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(900px 600px at 50% 40%, #000 55%, transparent 100%);
+            mask-image: radial-gradient(900px 600px at 50% 40%, #000 55%, transparent 100%);
+  }
+  .wrap {
+    position: relative; z-index: 2;
+    height: 100%;
+    display: flex; flex-direction: column;
+    justify-content: center;
+    padding: 0 88px;
+  }
+  .top { display: flex; align-items: center; gap: 22px; margin-bottom: 30px; }
+  .logo {
+    width: 84px; height: 84px; border-radius: 20px;
+    background: #fff; padding: 10px;
+    box-shadow: 0 10px 40px rgba(245,197,24,0.25);
+    object-fit: contain;
+  }
+  .brand { font-size: 40px; font-weight: 800; letter-spacing: 1px; }
+  .badge {
+    display: inline-block;
+    font-size: 15px; font-weight: 700; letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F5C518;
+    border: 1px solid rgba(245,197,24,0.4);
+    background: rgba(245,197,24,0.08);
+    padding: 7px 16px; border-radius: 999px;
+    margin-bottom: 26px; width: fit-content;
+  }
+  h1 {
+    font-size: 76px; line-height: 1.04; font-weight: 800;
+    letter-spacing: -1.5px; margin-bottom: 22px; max-width: 1000px;
+  }
+  h1 .accent { color: #F5C518; }
+  p.sub {
+    font-size: 25px; line-height: 1.5; color: #aab2c0;
+    max-width: 880px; margin-bottom: 38px;
+  }
+  .stack { display: flex; gap: 14px; flex-wrap: wrap; }
+  .pill {
+    font-size: 18px; font-weight: 600; color: #e7eaf0;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.10);
+    padding: 10px 20px; border-radius: 12px;
+  }
+  .foot {
+    position: absolute; bottom: 40px; left: 88px; z-index: 2;
+    font-size: 17px; color: #6b7280; letter-spacing: 0.3px;
+  }
+  .corner {
+    position: absolute; top: 0; right: 0; z-index: 1;
+    width: 420px; height: 420px;
+    background: radial-gradient(circle at 70% 30%, rgba(245,197,24,0.35), transparent 65%);
+    filter: blur(8px);
+  }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="corner"></div>
+
+  <div class="wrap">
+    <div class="top">
+      <img class="logo" src="../logo.png" alt="Zeloh" />
+      <span class="brand">Zeloh</span>
+    </div>
+
+    <span class="badge">Full-Stack · Production-Grade</span>
+
+    <h1>Movie&nbsp;Investment<br/><span class="accent">&amp; Rewards Platform</span></h1>
+
+    <p class="sub">
+      A mobile-first PWA, an admin dashboard, and a security-hardened
+      Node/Express API — with WhatsApp &amp; Email OTP, atomic crypto wallets,
+      and automated daily payouts.
+    </p>
+
+    <div class="stack">
+      <span class="pill">React</span>
+      <span class="pill">Vite</span>
+      <span class="pill">Node.js</span>
+      <span class="pill">Express</span>
+      <span class="pill">Supabase</span>
+      <span class="pill">Redis</span>
+      <span class="pill">Tailwind</span>
+    </div>
+  </div>
+
+  <div class="foot">Vibecoded with AI · delivered for a client in 4 days</div>
+</body>
+</html>
