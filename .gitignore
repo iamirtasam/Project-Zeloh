@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.local
+.env.production
+admin/.env
+admin/.env.production
+admin/create-admin.json
+whatsapp-server/node_modules
+whatsapp-server/.env
+whatsapp-server/.wwebjs_auth
+whatsapp-server/.wwebjs_cache

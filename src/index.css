@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sat: env(safe-area-inset-top);
+  --sab: env(safe-area-inset-bottom);
+  --sal: env(safe-area-inset-left);
+  --sar: env(safe-area-inset-right);
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: #1a1a1a;
+  overscroll-behavior: none;
+}
+
+@media (max-width: 430px) {
+  body {
+    background-color: #ffffff;
+  }
+}
+
+#root {
+  max-width: 390px;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  overflow-x: hidden;
+  background: #ffffff;
+  position: relative;
+}
+
+/* react-phone-input-2 theme overrides */
+.react-tel-input .form-control {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+.react-tel-input .flag-dropdown {
+  border: none !important;
+  background: transparent !important;
+}
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus,
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background: transparent !important;
+}
+.react-tel-input .country-list {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  border: 1px solid #f0f0f0;
+}
+.react-tel-input .country-list .country.highlight,
+.react-tel-input .country-list .country:hover {
+  background: #FFF8DC !important;
+}
+.react-tel-input .search-box {
+  border: 1px solid #F5C518 !important;
+  border-radius: 8px !important;
+  outline: none !important;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.skeleton {
+  background: #e0e0e0;
+  border-radius: 6px;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.news-content {
+  padding: 0 16px 80px 16px;
+}
+
+.news-content > *:first-child {
+  margin-top: 0 !important;
+}
